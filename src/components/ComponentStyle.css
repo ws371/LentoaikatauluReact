@@ -1,0 +1,35 @@
+.header {
+    border-collapse: collapse;
+    background-color: lightgreen;
+    color: black;
+    text-align: center;
+    padding: 1px;
+    font-size: 10px;
+    border: 1px solid black;
+
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+.table td {
+    padding: 1px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+    font-size: 10px;
+}
+.thead {
+    background-color: lightblue;
+    font-size: 12px;
+    border: 1px solid black;
+}
+.p {
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid black;
+
+}
