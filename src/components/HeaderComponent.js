@@ -1,5 +1,5 @@
 import "./ComponentStyle.css";
-function HeaderComponent() {
+export function OutHeaderComponent() {
     const headings = ["Lähtevät lennot 12.4.2024"]
     return (
         <div className="header">
@@ -7,4 +7,12 @@ function HeaderComponent() {
         </div>
     )
 }
-export default HeaderComponent;
+export function InHeaderComponent() {
+    const headings = ["Saapuvat lennot 12.4.2024"]
+    return (
+        <div className="header">
+            <h1> {headings} </h1>
+        </div>
+    )
+}
+

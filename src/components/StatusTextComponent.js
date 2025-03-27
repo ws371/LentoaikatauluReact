@@ -1,6 +1,4 @@
-
-
-function StatusTextComponent({selectedflight}) {
+export function OutStatusTextComponent({selectedflight}) {
     const description = ["Valittu: "]
     return (
         <div className="p">
@@ -12,4 +10,15 @@ function StatusTextComponent({selectedflight}) {
         </div>
     )
 }
-export default StatusTextComponent;
+export function InStatusTextComponent({selectedflight}) {
+    const description = ["Valittu: "]
+    return (
+        <div className="p">
+            {selectedflight ? (
+                <p>{description} {selectedflight.Lennonnumero} -> {selectedflight.Kohde}</p>
+            ) : (
+                <p>Valitse lento nähdäksesi tiedot</p>
+            )}
+        </div>
+    )
+}
